@@ -1,0 +1,120 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.cabecalho {
+  position: fixed;
+  background: #4574FE;
+  width: 100%;
+}
+
+.logotipo {
+  width: 10%;
+  height: 10%;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+  transition: 500ms;
+}
+
+.creditos {
+  position: absolute;
+  top: 80px;
+  right: 175px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: red;
+  font-size: 27px;
+}
+
+a {
+  text-decoration: none;
+  color: #4574FE;
+}
+
+input {
+display: none;
+}
+
+.filtro {
+  padding: 5px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.label {
+  margin-right: 20px;
+}
+
+.conteudo {
+  padding-top: 230px;
+}
+
+#baixos, #guitarras, #teclados {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.produtos {
+  display: inline-block;
+  text-align: center;
+  border: 7px solid #d4d4d4;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 2%;
+  box-shadow: 5px 5px 5px #3d3c3c;
+  background: #FFFFFF;
+}
+
+p {
+  margin: 5px;
+}
+
+.cordas {
+  width: 300px;
+  height: 300px;
+}
+
+.teclas {
+  width: 300px;
+  height: 150px;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.secTexto {
+  line-height: 30px;
+  margin: 0 25px;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.imgrodape {
+  width: 200px;
+  height: 200px;
+}

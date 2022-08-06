@@ -4,7 +4,184 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bluesoft Music</title>
   </head>
-  <body></body>
+  <body>
+    <header class="cabecalho">
+      <img
+        class="logotipo"
+        src="./imagens/logotipo.jpeg"
+        alt="Logo da Bluesoft Music"
+      />
+      <p class="creditos"><a href="creditos.html">Créditos</a></p>
+      <div class="filtro">
+        <input
+          type="radio"
+          name="rdbuttom"
+          id="todos"
+          checked="yes"
+          onclick="mostraDivTodos()"
+        />
+        <label for="todos" class="label">Todos</label>
+        <input
+          type="radio"
+          name="rdbuttom"
+          id="baixo"
+          onclick="escondeDivBaixo()"
+        />
+        <label for="baixo" class="label">Contra-Baixos</label>
+        <input
+          type="radio"
+          name="rdbuttom"
+          id="guitarra"
+          onclick="escondeDivGuitarra()"
+        />
+        <label for="guitarra" class="label">Guitarras</label>
+        <input
+          type="radio"
+          name="rdbuttom"
+          id="teclado"
+          onclick="escondeDivTeclado()"
+        />
+        <label for="teclado" class="label">Teclados</label>
+      </div>
+    </header>
+    <main>
+      <div class="conteudo">
+        <h1>
+          Antes de tudo, consulte nossa aba de
+          <a href="creditos.html">Créditos</a>, é de suma importância!
+        </h1>
+        <ul id="baixos">
+          <li class="produtos">
+            <img
+              src="imagens/Baixo 1.jpg"
+              alt="Modelo de Baixo 1"
+              class="cordas"
+            />
+            <h2>Fender jazz bass american pro</h2>
+            <p>Baixos</p>
+            <img
+              src="imagens/favorito.ico"
+              class="icon"
+              onclick="colorirMundo()"
+            />
+          </li>
+
+          <li class="produtos">
+            <img
+              src="imagens/Baixo 2.jpg"
+              alt="Modelo de Baixo 2"
+              class="cordas"
+            />
+            <h2>Fender Precision Bass</h2>
+            <p>Baixos</p>
+            <img src="imagens/favorito.ico" class="icon" />
+          </li>
+
+          <li class="produtos">
+            <img
+              src="imagens/Baixo 3.jpg"
+              alt="Modelo de Baixo 3"
+              class="cordas"
+            />
+            <h2>Music Man</h2>
+            <p>Baixos</p>
+            <img src="imagens/favorito.ico" class="icon" />
+          </li>
+        </ul>
+        <ul id="guitarras">
+          <li class="produtos">
+            <img
+              src="imagens/Guitarra 1.png"
+              alt="Modelo de Guitarra 1"
+              class="cordas"
+            />
+            <h2>Fender Telescaster</h2>
+            <p>Guitarras</p>
+            <img src="imagens/favorito.ico" class="icon" />
+          </li>
+
+          <li class="produtos">
+            <img
+              src="imagens/Guitarra 2.jpg"
+              alt="Modelo de Baixo 2"
+              class="cordas"
+            />
+            <h2>Fender Strato</h2>
+            <p>Guitarras</p>
+            <img src="imagens/favorito.ico" class="icon" />
+          </li>
+
+          <li class="produtos">
+            <img
+              src="imagens/Guitarra 3.jpg"
+              alt="Modelo de Guitarra 3"
+              class="cordas"
+            />
+            <h2>Modelo de Guitarra 3</h2>
+            <p>Teclados</p>
+            <img src="imagens/favorito.ico" class="icon" />
+          </li>
+        </ul>
+        <ul id="teclados">
+          <li class="produtos">
+            <img
+              src="imagens/Teclado 1.jpg"
+              alt="Modelo de Teclado 1"
+              class="teclas"
+            />
+            <h2>Modelo de Teclado 1</h2>
+            <p>Teclados</p>
+            <img src="imagens/favorito.ico" class="icon" />
+          </li>
+
+          <li class="produtos">
+            <img
+              src="imagens/Teclado 2.jpg"
+              alt="Modelo de Teclado 2"
+              class="teclas"
+            />
+            <h2>Modelo de Teclado 2</h2>
+            <p>Teclados</p>
+            <img src="imagens/favorito.ico" class="icon" />
+          </li>
+
+          <li class="produtos">
+            <img
+              src="imagens/Teclado 3.jpg"
+              alt="Modelo de Teclado 3"
+              class="teclas"
+            />
+            <h2>Modelo de Teclado 3</h2>
+            <p><img src="imagens/favorito.ico" class="icon" /></p>
+          </li>
+        </ul>
+      </div>
+      <h1>
+        Os preços de cada produto podem ser encontrados diretamente na nossa
+        loja, venha fazer o seu orçamento conosco!
+      </h1>
+      <h1 class="secTexto">
+        Também disponibilizamos testes com o instrumento que você preferir, para
+        você escolher o que mais combina com seu estilo musical!
+      </h1>
+    </main>
+    <footer>
+      <img
+        class="imgrodape"
+        src="./imagens/logotipo_branco.jpg"
+        alt="logotipo da Bluesoft Music com o fundo branco"
+      />
+    </footer>
+  </body>
 </html>
