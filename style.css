@@ -80,6 +80,10 @@ display: none;
   background: #FFFFFF;
 }
 
+.produtos:hover {
+  border: 7px solid #4574FE;
+}
+
 p {
   margin: 5px;
 }

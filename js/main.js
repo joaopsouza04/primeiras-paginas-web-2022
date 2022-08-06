@@ -27,10 +27,21 @@ function escondeDivTeclado() {
   divTeclado.style.display = 'flex'
 }
 
-function colorirMundo() {
-  if (imagem == a) {
-    imagem = a
+function coracao(imagem) {
+  if (
+    imagem.src ==
+    'https://raw.githubusercontent.com/joaopsouza04/primeiras-paginas-web-2022/main/imagens/favorito.ico'
+  ) {
+    imagem.src =
+      'https://raw.githubusercontent.com/joaopsouza04/primeiras-paginas-web-2022/main/imagens/favorito_cheio.ico'
+  } else if (
+    imagem.src ==
+    'https://raw.githubusercontent.com/joaopsouza04/primeiras-paginas-web-2022/main/imagens/favorito_cheio.ico'
+  ) {
+    imagem.src =
+      'https://raw.githubusercontent.com/joaopsouza04/primeiras-paginas-web-2022/main/imagens/favorito.ico'
   } else {
-    imagem = a
+    imagem.src =
+      'https://raw.githubusercontent.com/joaopsouza04/primeiras-paginas-web-2022/main/imagens/favorito_cheio.ico'
   }
 }
