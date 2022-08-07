@@ -28,6 +28,12 @@ header a {
   font-weight: bold;
 }
 
+
+
+label:checked {
+  background: green;
+}
+
 header a:hover {
   color: red;
   font-size: 27px;
@@ -36,6 +42,7 @@ header a:hover {
 a {
   text-decoration: none;
   color: #4574FE;
+  font-weight: bold;
 }
 
 input {
@@ -49,7 +56,7 @@ display: none;
   font-weight: bold;
 }
 
-.label {
+label {
   margin-right: 20px;
 }
 
@@ -78,10 +85,13 @@ display: none;
   margin: 2%;
   box-shadow: 5px 5px 5px #3d3c3c;
   background: #FFFFFF;
+  transition: 600ms;
 }
 
 .produtos:hover {
+  transition: 600ms;
   border: 7px solid #4574FE;
+  margin: 0 2% 3% 2%;
 }
 
 p {
@@ -101,8 +111,8 @@ p {
 h1 {
   font-size: 20px;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .secTexto {
